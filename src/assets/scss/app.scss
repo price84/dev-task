@@ -30,17 +30,17 @@
 @include foundation-label;
 @include foundation-media-object;
 @include foundation-off-canvas;
-@include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
+// @include foundation-orbit;
+// @include foundation-pagination;
+// @include foundation-progress-bar;
 // @include foundation-progress-element;
 // @include foundation-meter-element;
-@include foundation-slider;
-@include foundation-sticky;
-@include foundation-reveal;
-@include foundation-switch;
-@include foundation-table;
-@include foundation-tabs;
+// @include foundation-slider;
+// @include foundation-sticky;
+// @include foundation-reveal;
+// @include foundation-switch;
+// @include foundation-table;
+// @include foundation-tabs;
 @include foundation-thumbnail;
 @include foundation-title-bar;
 @include foundation-tooltip;
@@ -52,12 +52,22 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+.logo img {
+	height: rem-calc(40);
+	padding-right: rem-calc(40);
+	 @media #{$small-only} {
+        float: right;
+        padding-right: rem-calc(10);
+        padding-bottom: rem-calc(10);
+    }
+}
+
 .nav {
-	padding-top: 50px;
+	padding-top: rem-calc(50);
 	background-color: $dark-gray;
-	height: 90vh;
+	// height: 90vh;
 	li {
-		padding-bottom: 15px;
+		padding-bottom: rem-calc(10);
 	}
 	h6 {
 		color: $white;
@@ -73,9 +83,6 @@
 		}
 	}
 }
-.dark{
-	background: url('./images/dark_grey.jpg');
-}
 .dark input[type=text]{
 	border:1px solid #2a2e31;
 	background-color:#2d3035;
@@ -83,8 +90,8 @@
 }
 .background {
 	background-color: $white;
-	border: 1px solid $light-gray;
-	padding: 30px;
+	border: rem-calc(1) solid $light-gray;
+	padding: rem-calc(30);
 	h4, h5 {
 		color: $light-gray;
 	}
