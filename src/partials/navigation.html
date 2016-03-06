@@ -1,11 +1,27 @@
 <div class="row column nav">
+  <div class="account">
+    <a href="#">
+      <ul class="menu">
+        <li>
+            <i class="fi-torso"></i>
+        </li>
+        <li>
+          <h5>Guest</h5>
+          <p>Not logged in</p>
+        </li>
+      </ul> 
+    </a>
+  </div>
   <h6>NAVIGATION</h6>
-  <ul class="menu vertical">
+  <ul class="vertical menu" data-accordion-menu>
     <li><a href="#"><i class="fi-home"></i> <span>Homepage</span></a></li>
-    <li><a href="#"><i class="fi-eye"></i> <span>Products</span></a></li>
-      <ul class="nested vertical menu">
+    <li><a href="#"><i class="fi-eye"></i> <span>Products</span></a>
+      <ul class=" menu vertical nested">
         <li><a href="#">Example Sub Item</a></li>
+        <li><a href="#">Another Sub Item</a></li>
+        <li><a href="#">Third Sub Item</a></li>
       </ul>
+    </li>
     <li><a href="#"><i class="fi-info"></i> <span>About Us</span></a></li>
     <li class="active"><a href="#"><i class="fi-pencil"></i> <span>Blog</span></a></li>
     <li><a href="#"><i class="fi-book"></i> <span>Knowledgebase</span></a></li>
@@ -17,7 +33,7 @@
     <li><a href="#"><i class="fi-lock"></i> <span>Login</span></a></li>
   </ul>
   <h6>SEARCH</h6>
-  <div class="dark">
+  <div class="search">
     <form>
       <span><input type="text" class="search square" placeholder="Example..."></span>
     </form>

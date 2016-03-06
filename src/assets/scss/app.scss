@@ -52,24 +52,29 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-.logo img {
-	height: rem-calc(40);
-	padding-right: rem-calc(40);
-	 @media #{$small-only} {
-        float: right;
-        padding-right: rem-calc(10);
-        padding-bottom: rem-calc(10);
-    }
+.top-bar {
+	padding: rem-calc(12);
 }
 
+.logo img {
+	height: rem-calc(40);
+	margin: rem-calc(10 100 10 0);
+	 @media #{$small-only} {
+	 			height: rem-calc(20);
+        float: right;
+        margin-right: rem-calc(10);
+    }
+}
 .nav {
-	padding-top: rem-calc(50);
+	height:100%;
+	padding: rem-calc(0);
 	background-color: $dark-gray;
-	// height: 90vh;
+	height: 100vh;
 	li {
-		padding-bottom: rem-calc(10);
+		margin: rem-calc(10 0 0 10);
 	}
 	h6 {
+		margin: rem-calc(10 0 0 10);
 		color: $white;
 		font-family: $sub-head-font-family;
 	}
@@ -83,12 +88,34 @@
 		}
 	}
 }
-.dark input[type=text]{
-	border:1px solid #2a2e31;
-	background-color:#2d3035;
-	color:#505358;
+.account {
+	background-color: $medium-gray;
+	padding: rem-calc(10 0 10 10);
+	margin: rem-calc(0 0 30 0);
+	&:hover {
+			color: $white;
+		}
+	h5, p {
+		margin-bottom: 0;
+	}
+	i {
+		font-size: rem-calc(40);
+		margin-right: rem-calc(25);
+		color: $medium-gray;
+  	background: $light-gray;
+  	padding: rem-calc(5 15);
+  	border-radius: 50%;
+   }
+}
+.search input[type=text]{
+	margin-top: rem-calc(20);
+	border:1px solid $medium-gray;
+	background-color: $dark-gray;
+	color: $medium-gray;
 }
 .background {
+	overflow: hidden;
+	height: 100%;
 	background-color: $white;
 	border: rem-calc(1) solid $light-gray;
 	padding: rem-calc(30);
