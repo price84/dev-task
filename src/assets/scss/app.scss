@@ -37,12 +37,11 @@
     }
 }
 .nav {
-	height:100%;
 	padding: rem-calc(0);
 	background-color: $dark-gray;
 	height: 100vh;
 	li {
-		margin: rem-calc(10 0 0 10);
+		margin: rem-calc(5 0 0 10);
 	}
 	h6 {
 		margin: rem-calc(10 0 0 10);
@@ -89,20 +88,25 @@
 	padding: rem-calc(30);
 	h4, h5 {
 		color: $light-gray;
+		line-height: 0;
 	}
 	h5 {
 		font-size: rem-calc(16);
 		font-family: $sub-head-font-family;
 	}
 }
+.breadcrumbs {
+	line-height: 0;
+}
+
 .cars {
 	position: absolute;
-	top: rem-calc(250);
+	top: rem-calc(220);
 	padding-top: rem-calc(10);
 	background-color: $white;
 	max-width: 100%;
 	 @media #{$medium-up} {
 	 	border: rem-calc(1) solid $light-gray;
-	 	margin-top: rem-calc(50);
+	 	margin-top: rem-calc(40);
     }
 }
